@@ -1,0 +1,127 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the main container */
+main 
+{
+    background-image: url('https://cdn.vectorstock.com/i/500p/96/52/light-blue-background-abstract-pastel-vector-23059652.jpg'); /* Add your image URL here */
+    background-size: cover; /* make sure the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the outer box (the entire ad) */
+.thuloBox 
+{
+    background-color: rgb(117, 25, 25); /* Keeps the background of the whole ad black */
+    width: 700px;
+    display: flex;
+    box-shadow: 11px 11px 18px 3px rgba(0,0,0,0.75);
+}
+
+/* Left side image container */
+.Mold 
+{
+    width: 50%; /* Occupies half of the container */
+    padding: 0;
+    margin: 0;
+}
+
+.picFrame 
+{
+    background-color: rgb(27, 82, 83); /* Dark teal background around the image */
+    width: 100%;
+    height: 100%;
+}
+
+.picFrame img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Right side details container */
+.box 
+{
+    width: 50%; /* Occupies the other half */
+    background-color: rgb(255, 255, 255); /* White background for a clean look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Adds padding around the content */
+    color: rgb(33, 37, 41); /* Darker text color for better readability */
+}
+
+/* accessing the h6 wala text */
+.box h6 
+{
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: rgb(117, 117, 117); /* Soft gray for category */
+}
+
+/* Perfume ko Name */
+.box h1 
+{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(33, 37, 41);
+}
+
+/* Description text */
+.box .description 
+{
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+    margin-bottom: 20px;
+}
+
+/* Price styling */
+.box .price 
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(33, 150, 243);
+}
+.box .price:hover
+{
+    color: green;
+    transition: background-color 0.3s ease;
+}
+/* Add-to-cart button */
+.add-to-cart 
+{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(33, 150, 243); /* Blue color for the button */
+    color: #000000;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-to-cart:hover 
+{
+    background-color: rgb(25, 210, 96);
+}
+
+/* Icon for shopping cart */
+.add-to-cart
+{
+    font-size: 18px;
+}
